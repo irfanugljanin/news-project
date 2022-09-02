@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Page404 from "../Page404";
+import Home from "./Home";
 const RouterPage = (props) => {
   return (
     <>
       <Routes>
-        <Route path="" element={<p>asd</p>}></Route>
-        <Route path="*" element={<Page404 />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );
