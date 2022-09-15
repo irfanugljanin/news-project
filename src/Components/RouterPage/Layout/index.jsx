@@ -5,7 +5,7 @@ const Layout = (props) => {
   return (
     <>
       <Nav />
-      <div style={{ minHeight: "80vh" }}>{props.children}</div>
+      <div>{props.children}</div>
       <Footer />
     </>
   );
