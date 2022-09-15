@@ -23,8 +23,6 @@ const NewsList = () => {
     fetchnews();
   }, []);
 
-  const navigation = useNavigate();
-
   return <div className="newslist-container"></div>;
 };
 
