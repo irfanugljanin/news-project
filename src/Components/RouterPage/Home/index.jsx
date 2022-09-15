@@ -1,10 +1,14 @@
-import { useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Layout from "../Layout";
+import NewsList from "./NewsList";
 
 const Home = () => {
-  const location = useLocation();
-
-  return <Layout>{location.state && <p>{location.state.name}</p>}</Layout>;
+  return (
+    <Layout>
+      <NewsList />
+      <Outlet />
+    </Layout>
+  );
 };
 
 export default Home;

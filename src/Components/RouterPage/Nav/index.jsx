@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
+import { Autocomplete } from "@mantine/core";
+import { IconSearch } from "@tabler/icons";
 import "./style.css";
+
 const Nav = () => {
   return (
     <div className="navigation-container">
@@ -16,9 +19,11 @@ const Nav = () => {
       </div>
 
       <div className="navigation-search">
-        <label htmlFor="search">
-          <input type="search" name="" id="" placeholder="Search" />
-        </label>
+        <Autocomplete
+          placeholder="Search"
+          icon={<IconSearch size={16} stroke={1.5} />}
+          data={[""]}
+        />
       </div>
     </div>
   );
