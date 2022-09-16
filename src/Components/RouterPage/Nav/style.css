@@ -17,9 +17,10 @@
 }
 
 .navigation-logo {
+  width: 228px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .navigation-logo h1 {
