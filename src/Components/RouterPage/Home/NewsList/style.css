@@ -5,12 +5,14 @@
 
 .container {
   width: 100%;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(250, 250, 250);
   padding: 100px;
 
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  cursor: pointer;
 }
 
 .card-container {
@@ -20,10 +22,12 @@
 
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.134),
+    0 3px 10px 0 rgba(0, 0, 0, 0.101);
 }
 
 .card-container:hover {
-  background-color: #1020390b;
+  background-color: #10203906;
 }
 
 .card-container img {
@@ -38,4 +42,6 @@
 
 .card-container p {
   padding: 8px 8px;
+  font-size: 13px;
+  color: rgb(57, 57, 57);
 }

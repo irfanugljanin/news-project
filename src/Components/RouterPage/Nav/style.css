@@ -13,6 +13,7 @@
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 
 .navigation-logo {
@@ -38,6 +39,10 @@
   text-decoration: none;
   color: white;
   padding-right: 24px;
+}
+
+.navigation-item:hover {
+  color: #ffffff86;
 }
 
 .navigation-search {
