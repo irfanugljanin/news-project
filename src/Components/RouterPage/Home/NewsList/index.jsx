@@ -34,6 +34,11 @@ const NewsList = () => {
             <img src={item.urlToImage} />
             <h2>{item.title}</h2>
             <p>{item.description}</p>
+
+            <div className="read-more">
+              <p>{item.publishedAt}</p>
+              <a>Read More</a>
+            </div>
           </div>
         );
       })}
