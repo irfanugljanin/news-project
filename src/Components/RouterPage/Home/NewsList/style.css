@@ -61,10 +61,12 @@
   padding: 8px;
 }
 
-.read-more a {
+.read-more button {
   color: #855d0b;
   font-weight: bolder;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .btn-loadmore {

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.article-container {
+  width: 100%;
+  padding: 100px;
+}
+
+.advertisement {
+  width: 900px;
+  height: 250px;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-container h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.article-container img {
+  width: 800px;
+}
