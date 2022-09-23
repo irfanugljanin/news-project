@@ -34,9 +34,19 @@ const NewsList = () => {
       {news.map((item) => {
         return (
           <div className="card-container">
-            <img src={item.urlToImage} alt="img" />
+            {item.urlToImage ? (
+              <img src={item.urlToImage} alt="img" />
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "rgb(234, 234, 234)",
+                  minHeight: "250px",
+                }}
+              ></div>
+            )}
+
             <h2>{item.title}</h2>
-            <p>{item.description}</p>
+            {item.description ? <p>{item.description}</p> : <p>{item.title}</p>}
 
             <div className="read-more">
               <p>{item.publishedAt}</p>
@@ -45,18 +55,18 @@ const NewsList = () => {
                 state={item}
                 onClick={() => setNewsArticle(item)}
               >
-                <button>Read More</button>
+                <button className="read-more_btn">Read More</button>
               </Link>
             </div>
           </div>
         );
       })}
-      <div className="btn-loadmore">
+      <div className="load-more">
         <button
           onClick={() => {
             setPages(pages + 20);
           }}
-          className="load-more"
+          className="load-more_btn"
         >
           Load More
         </button>

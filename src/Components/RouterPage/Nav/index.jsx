@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="navigation-container">
       <div className="navigation-logo">
-        <h1>NEWS</h1>
+        <a href="/">NEWS</a>
       </div>
       <div className="navigation-container__links">
         <Link className="navigation-item" to="/">
@@ -21,7 +21,7 @@ const Nav = () => {
       <div className="navigation-search">
         <Autocomplete
           placeholder="Search"
-          icon={<IconSearch size={16} stroke={1.5} />}
+          icon={<IconSearch size={16} stroke={2} />}
           data={[""]}
         />
       </div>

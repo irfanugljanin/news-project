@@ -20,8 +20,20 @@
 .article-container h2 {
   font-size: 40px;
   font-weight: 600;
+  padding-top: 48px;
 }
 
 .article-container img {
   width: 800px;
+}
+
+.article-author-time {
+  display: flex;
+  padding: 16px 0;
+}
+
+.article-author-time p {
+  font-size: 14px;
+  padding-right: 16px;
+  color: rgb(110, 110, 110);
 }

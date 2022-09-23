@@ -11,7 +11,11 @@ const Article = () => {
     <Layout>
       <div className="article-container">
         <div className="advertisement">Advertisement Place</div>
-        <h2>{state.description}</h2>
+        <h2>{state.title}</h2>
+        <div className="article-author-time">
+          <p>{"Writes: " + state.author}</p>
+          <p>{state.publishedAt}</p>
+        </div>
         <img src={state.urlToImage} alt="" />
       </div>
     </Layout>

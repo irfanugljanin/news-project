@@ -23,10 +23,11 @@
   justify-content: start;
   align-items: center;
 }
-.navigation-logo h1 {
+.navigation-logo a {
   font-size: 28px;
   font-weight: 600;
   color: white;
+  text-decoration: none;
 }
 
 .navigation-container__links {
@@ -50,10 +51,4 @@
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-.navigation-search input {
-  height: 24px;
-  border: none;
-  border-radius: 5px;
 }
